@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-purple-950 text-white;
+  }
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400;
+}
+
+/* Custom styles for Mapbox */
+.leaflet-container {
+  background-color: #1a1a1a;
+}
+
+.custom-popup .leaflet-popup-content-wrapper {
+  background-color: rgba(91, 33, 182, 0.9);
+  color: white;
+  border-radius: 0.5rem;
+  backdrop-filter: blur(8px);
+}
+
+.custom-popup .leaflet-popup-tip {
+  background-color: rgba(91, 33, 182, 0.9);
+}
+
+.custom-popup h3 {
+  color: white;
+}
+
+.custom-popup p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.leaflet-control-zoom {
+  border: none !important;
+  margin-right: 20px !important;
+}
+
+.leaflet-control-zoom a {
+  background-color: rgba(91, 33, 182, 0.9) !important;
+  color: white !important;
+  border: none !important;
+  backdrop-filter: blur(8px);
+}
+
+.leaflet-control-zoom a:hover {
+  background-color: rgba(126, 34, 206, 0.9) !important;
+}
+
+.leaflet-control-attribution {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+  backdrop-filter: blur(8px);
+}
+
+.leaflet-control-attribution a {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
